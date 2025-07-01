@@ -29,7 +29,7 @@ A GitHub Action to send push notifications via the [Pushcut](https://www.pushcut
 - uses: lzilioli/pushcut-notify-action@v1
   with:
     api-key: ${{ secrets.PUSHCUT_API_KEY }}
-    notification-name: 'JSONBasedConfig'
+    notification-name: 'Build Status'
     title: '🚀 Deployment to Production'
     text: 'Your site has been deployed successfully!'
     time-sensitive: 'true'
@@ -37,7 +37,7 @@ A GitHub Action to send push notifications via the [Pushcut](https://www.pushcut
       [
         {"name": "View Site", "url": "https://example.com", "keepNotification": true},
         {"name": "View Logs", "url": "https://github.com/owner/repo/actions", "keepNotification": true},
-        {"name": "Apple Site (with drafts)", "url": "https://apple.lukezilioli.com/?showDrafts=true", "keepNotification": true}
+        {"name": "Run Tests", "shortcut": "Run Test Suite", "keepNotification": true}
       ]
     default-action: |
       {"url": "https://example.com"}
