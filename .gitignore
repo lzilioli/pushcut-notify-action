@@ -1,0 +1,3 @@
+.claude/*local*
+.claude/*.lock
+.claude/worktrees
